@@ -26,7 +26,7 @@ function Login() {
   };
 
   return (
-    <div className="auth-wrapper flex justify-center items-center min-h-screen">
+    <div className="auth-wrapper bg-blue-100 flex justify-center items-center min-h-screen">
       <div className="auth-inner">
         <form onSubmit={handleSubmit}>
           <h3 className="font-bold text-lg md:text-start text-center">
@@ -38,7 +38,7 @@ function Login() {
             <input
               type="email"
               className="form-control w-80 px-3 py-1 border rounded-md outline-none"
-              placeholder="Enter email"
+              placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -49,7 +49,7 @@ function Login() {
             <input
               type="password"
               className="form-control w-80 px-3 py-1 border rounded-md outline-none"
-              placeholder="Enter password"
+              placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

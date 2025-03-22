@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import Header from "./components/Header/index.jsx";
+import Header from "./components/Header/Header.jsx";
 import RecipeCard from "./components/RecipeCard/RecipeCard.jsx";
 import "./app.css";
 import SearchInput from './components/SearchInput.jsx'
-const APP_ID = "a52b4d43";
-const APP_KEY = "e0e5c667605f5e91d8275c973531b80a";
 
 const App = () => {
+  const APP_ID = import.meta.env.VITE_APP_ID;
+  const APP_KEY = import.meta.env.VITE_APP_KEY;
   const [searchQuery, setSearchQuery] = useState("");
   const [recipeList, setRecipeList] = useState([]);
   const [timeoutId, setTimeoutId] = useState();

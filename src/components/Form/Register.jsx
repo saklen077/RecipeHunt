@@ -20,9 +20,7 @@ function Register() {
       if (user) {
         await setDoc(doc(db, "Users", user.uid), {
           email: user.email,
-          firstName: fname,
-          lastName: lname,
-          photo:""
+          fullName: fname,
         });
       }
       console.log("User Registered Successfully!!");
@@ -38,7 +36,7 @@ function Register() {
   };
 
   return (
-   <div className="auth-wrapper flex justify-center items-center min-h-screen">
+   <div className="auth-wrapper bg-blue-100  flex justify-center items-center min-h-screen">
     <div className="auth-inner">
     <form onSubmit={handleRegister}>
      <h3 className="font-bold text-lg md:text-start text-center">
@@ -77,7 +75,7 @@ function Register() {
           required
         />
       </div>
-
+      
       
       <div className="text-xl flex justify-around mt-5">
             <button type="submit" className="bg-lime-700 text-white px-3 py-1 rounded-md hover:bg-lime-900 duration-300 cursor-pointer">Signup</button>

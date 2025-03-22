@@ -1,20 +1,11 @@
-import React, { useEffect } from "react";
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-
+import {BrowserRouter as Router,Routes,Route,Navigate,} from "react-router-dom";
 import Login from "./components/Form/Login.jsx";
 import SignUp from "./components/Form/Register.jsx";
-
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Profile from "./App.jsx";
-import { useState } from "react";
 import { auth } from "./components/firebase.jsx";
 
 function App() {
