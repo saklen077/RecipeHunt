@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import Header from "./components/Header/Header.jsx";
 import RecipeCard from "./components/RecipeCard/RecipeCard.jsx";
-import "./app.css";
+import './App.css'
 import SearchInput from './components/SearchInput.jsx'
 import Footer from "./components/Footer.jsx";
 
