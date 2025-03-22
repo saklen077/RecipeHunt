@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import RecipeCard from "./components/RecipeCard/RecipeCard.jsx";
 import "./app.css";
 import SearchInput from './components/SearchInput.jsx'
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   const APP_ID = import.meta.env.VITE_APP_ID;
@@ -67,9 +68,10 @@ const App = () => {
             <RecipeCard key={index} recipe={recipe.recipe} />
           ))
         ) : (
-          <p className="text-center text-gray-500 mt-10">No recipes found.</p>
+          <p className="text-center text-gray-500 mt-10 mb-[calc(100%-80%)]">No recipes found.</p>
         )}
       </div>
+      <Footer />
     </div>
   );
 };
