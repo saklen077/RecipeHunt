@@ -9,7 +9,7 @@ function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
+
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -24,6 +24,7 @@ function Register() {
         });
       }
       console.log("User Registered Successfully!!");
+      window.location.href = "/profile";
       toast.success("User Registered Successfully!!", {
         position: "top-center",
       });
